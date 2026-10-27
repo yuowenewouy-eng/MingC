@@ -8,6 +8,7 @@ MIngC 的版本记录。版本号对应 `package.json` 的 `version`。
 - “只输出提示词”写进 agent 身份与 preset 描述：第一句即声明任何请求（图片、代码、文件、命令、项目改动）都只产出提示词/规格，不执行、不生成、不修改。
 - 版权人改为 GitHub ID `yuowenewouy-eng`。
 - 公开工作区约定 `AGENTS.md`：AI 代理在本仓库只输出提示词/规格（维护 MIngC 本身时例外）。
+- README 记录从 GitHub 地址直接安装的方式（插件页粘贴仓库 URL）及 Git 前置条件。
 
 ## 0.1.6 — 2026-10-27
 
