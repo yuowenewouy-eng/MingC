@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "MIngC · Prompt Compiler",
+    "description": "Prompt-only: produces prompts and specs, never executes, generates, or modifies. Direction lock, best-practice completion, human confirmation, and logic self-check."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "MingC",
+  "version": "0.1.7",
+  "private": true,
+  "description": "MIngC：只输出提示词与需求规格的 DSH Agent 预设（不执行、不生成、不修改）。",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "agent-preset",
+    "prompt",
+    "prompt-compiler",
+    "mingc"
+  ],
+  "author": "yuowenewouy-eng",
+  "homepage": "https://github.com/yuowenewouy-eng/MingC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuowenewouy-eng/MingC.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuowenewouy-eng/MingC/issues"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "engines": {
+    "node": ">=24",
+    "dsh": ">=0.2.1-rc.3"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}

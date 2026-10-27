@@ -1,0 +1,22 @@
+# Dependencies / package manager
+node_modules/
+.pnpm-store/
+pnpm-lock.yaml
+
+# Local development artifacts (not part of the published bundle)
+HANDOFF.md
+AGENTS.md
+reviews/
+lavender/
+samples/
+pics1.jpg
+references/
+
+# Python / OS / editor noise
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
