@@ -5,7 +5,6 @@ pnpm-lock.yaml
 
 # Local development artifacts (not part of the published bundle)
 HANDOFF.md
-AGENTS.md
 reviews/
 lavender/
 samples/

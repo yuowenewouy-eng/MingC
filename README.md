@@ -21,8 +21,9 @@ MIngC 是一个**只输出提示词**的 DSH Agent 预设：把用户尚未成�
 | `examples/photo-escape-v2.md` | 示例产物：一张照片的文生图提示词（含逻辑自检） |
 | `LICENSE` | MIT 许可证 |
 | `CHANGELOG.md` | 版本记录 |
+| `AGENTS.md` | 工作区约定：AI 代理在本仓库只输出提示词/规格（维护 MIngC 本身时例外） |
 
-> `HANDOFF.md`、`AGENTS.md`、`reviews/`、`lavender/`、`samples/`、`pics1.jpg` 是本地开发/调试产物，已在 `.gitignore` 中排除，不随仓库发布。
+> `HANDOFF.md`、`reviews/`、`lavender/`、`samples/`、`pics1.jpg` 是本地开发/调试产物，已在 `.gitignore` 中排除，不随仓库发布。
 
 ## 从 GitHub 安装
 
