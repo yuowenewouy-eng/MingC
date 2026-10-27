@@ -25,6 +25,20 @@ MIngC 是一个**只输出提示词**的 DSH Agent 预设：把用户尚未成�
 
 > `HANDOFF.md`、`reviews/`、`lavender/`、`samples/`、`pics1.jpg` 是本地开发/调试产物，已在 `.gitignore` 中排除，不随仓库发布。
 
+## 从 npm 安装（发布后）
+
+```text
+dsh-mingc
+```
+
+在插件页粘贴包名 `dsh-mingc` 安装，或使用 CLI：
+
+```powershell
+dsh plugin --profile <profile> add dsh-mingc
+```
+
+> 也可以继续用 GitHub 地址安装；两者内容一致，npm 版本便于固定版本号与自动更新。
+
 ## 从 GitHub 安装
 
 **最快方式（推荐）**：插件 → **添加插件** → **安装第三方插件** → 粘贴仓库地址：

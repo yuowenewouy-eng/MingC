@@ -1,7 +1,6 @@
 {
   "name": "dsh-mingc",
   "version": "0.1.8",
-  "private": true,
   "description": "MIngC：只输出提示词与需求规格的 DSH Agent 预设（不执行、不生成、不修改）。",
   "keywords": [
     "dsh",
@@ -40,6 +39,9 @@
     "README.md"
   ],
   "icon": "./icon.svg",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"

@@ -5,6 +5,7 @@ MIngC 的版本记录。版本号对应 `package.json` 的 `version`。
 ## 0.1.8 — 2026-10-27
 
 - 包名改为 npm 合法的小写名 `dsh-mingc`，agent 显示名仍为 MIngC；为将来发布 npm 做准备。
+- 移除 `private`，补 `publishConfig.registry`；README 增加 npm 安装说明。
 
 ## 0.1.7 — 2026-10-27
 
