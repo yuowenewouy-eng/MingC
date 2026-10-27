@@ -14,7 +14,7 @@ MIngC 是一个**只输出提示词**的 DSH Agent 预设：把用户尚未成�
 | 文件 | 作用 |
 |---|---|
 | `cordis.patch.yml` | 唯一事实源：预设声明、MIngC 人设全文、工具组合 |
-| `package.json` | 本地 bundle 清单（包名 `MingC`） |
+| `package.json` | 本地 bundle 清单（包名 `dsh-mingc`，agent 显示名 MIngC） |
 | `index.js` | 空模块；本 bundle 只提供配置层 |
 | `locale/zh.json`、`locale/en.json` | 插件页显示名称与说明 |
 | `icon.svg` | 插件页图标 |
@@ -164,7 +164,7 @@ MIngC 的人格与规则都在 `cordis.patch.yml` 的 `persona.prefix` 中。修
 | 预设显示加载失败 | 打开插件页查看错误；也可看 `%USERPROFILE%\.dsh\logs\startup-*.log` 的加载诊断；修正 `cordis.patch.yml` 的 YAML/包名后重装 |
 | 路径被拒绝/无反应 | 使用绝对路径；确认目录下有 `package.json`；不要加引号或多余空格；按 Host 返回的原因（`not-a-package` / `not-a-bundle`）修正 |
 | 移动目录后失效 | 从新路径重新安装 |
-| 从旧包名 `@local/mingc` 升级 | 先在插件页卸载旧 MIngC（或完全退出 DSH 后 `dsh plugin --profile desktop remove @local/mingc`），再安装本目录；新包名为 `MingC` |
+| 从旧包名升级 | 旧版本可能叫 `@local/mingc` 或 `MingC`：先在插件页卸载旧 MIngC，再安装本目录；当前包名为 `dsh-mingc` |
 | 想恢复默认 | 删除 bundle；内置预设不受影响 |
 
 ## 边界与隐私
@@ -203,6 +203,7 @@ MIT，Copyright (c) 2026 yuowenewouy-eng，见 [LICENSE](LICENSE)。
 
 ## 版本
 
+- `0.1.8`：包名改为 npm 合法的小写名 `dsh-mingc`（agent 显示名仍是 MIngC）；为将来发布 npm 做准备。
 - `0.1.7`：包名改为 `MingC`；把“只输出提示词”写进 agent 身份与 preset 描述（不只是工作区约定）：第一句即声明任何请求都只产出提示词/规格，不执行、不生成、不修改。版权人改为 GitHub ID `yuowenewouy-eng`。
 - `0.1.6`：把“只产出提示词”升级为绝对边界。任意请求（图片/视频、代码、改文件、运行命令、安装依赖、调试）都只交付提示词/规格，不执行、不生成、不修改；仅维护 MIngC 项目本身时可写文件。persona 新增「零、绝对边界（最高优先级）」；`AGENTS.md` 同步覆盖本工作区所有预设。
 - `0.1.5`：修复“只要提示词却被程序化绘图”的问题。新增工作区 `AGENTS.md`（对本工作区所有预设生效）：图像/视频请求只产出提示词，禁止 Python/Pillow 等程序化绘图；persona 明确“我要一张图/画一张/生成照片/出图”时只说明不生成并直接编译提示词，不调用工具。

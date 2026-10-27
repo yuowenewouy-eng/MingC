@@ -1,6 +1,6 @@
 {
-  "name": "MingC",
-  "version": "0.1.7",
+  "name": "dsh-mingc",
+  "version": "0.1.8",
   "private": true,
   "description": "MIngC：只输出提示词与需求规格的 DSH Agent 预设（不执行、不生成、不修改）。",
   "keywords": [

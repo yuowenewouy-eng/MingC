@@ -19,6 +19,6 @@
 ## 项目约定
 
 - 项目事实源：`cordis.patch.yml`（人设与工具组合）、`README.md`（安装/使用）、`CHANGELOG.md`（版本记录）。
-- 本地安装是链接引用：`package.json` 的包名是 `MingC`；克隆后不要把目录移动到别处，移动后需要重新安装。
+- 本地安装是链接引用：`package.json` 的包名是 `dsh-mingc`（agent 显示名 MIngC）；克隆后不要把目录移动到别处，移动后需要重新安装。
 - 本地开发产物（临时图片、脚本、审查记录、转换文档等）不要提交到仓库；未经用户同意不要删除这些文件。
 - 修改 `cordis.patch.yml` 或 `package.json` 后，按 README 的“开发与验证”重新组合并验证，再提交。
